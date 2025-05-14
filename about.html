@@ -1,0 +1,54 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExploreWorld- About</title>
+    <link rel="stylesheet" href="css.style.css">
+ </head>
+ <body>
+    <header>
+        <h1>ExploreWorldBeyond</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>About Us</h2>
+            <p>Jambo World!! Welcome to ExploreWorldBeyond, where your travel dreams turn into unforgettable adventures. From the sun-kissed beaches of Zanzibar to the snow-capped peaks of the Kilimanjaro, we craft personalized journeys that ignite your spirit of exploration. Our expert guides, curated experiences, and seamless service ensure every moment is magical. With ExploreWorld, the world isn’t just a destination—it’s your playground. Discover, explore, and create memories that last a lifetime.
+.</p>
+        </section>
+    </main>
+<body onload="startSlideshow()"> 
+  <img id="slideshow" src="R.jpg" width="800" height="400">
+  
+  <script>
+    const images = ["R.jpg", "tanzania-tg.png", "Twigas.jpg", "R.jpg", "tankili.jpg", "Eco.jpg", "Tanzania.webp"]; // all image paths
+    let index = 0;
+
+    function startSlideshow() {
+      setInterval(() => {
+        index = (index + 1) % images.length;
+        document.getElementById("slideshow").src = images[index];
+      }, 5000); // Change image every 5 seconds
+    }
+  </script>
+</body>
+
+<p>watch the video to know more about us<p>
+
+<video width="740" height="360" controls>
+  <source src="4k video.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+    <footer>
+        <p>&copy; 2025 ExploreWorld. All rights reserved.</p>
+    </footer>
+ </body>
+ </html>

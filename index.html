@@ -1,0 +1,48 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExploreWorldBeyond</title>
+    <link rel="stylesheet" href="css.style.css">
+ </head>
+ <body>
+    <header>
+        <h1>ExploreWorldBeyond</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Know About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h2>Discover the world with us</h2>
+            <p>Your adventure starts here!</p>
+            <img src="South-African-Tourism.jpg" alt="Tourism Image">
+<body onload="startSlideshow()"> 
+  <img id="slideshow" src="South-African-Tourism.jpg" width="600" height="400">
+  
+  <script>
+    const images = ["tankili.jpg", "Eco.jpg", "Tanzania.webp"]; // all image paths
+    let index = 0;
+
+    function startSlideshow() {
+      setInterval(() => {
+        index = (index + 1) % images.length;
+        document.getElementById("slideshow").src = images[index];
+      }, 3000); // Change image every 3 seconds
+    }
+  </script>
+</body>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ExploreWorld. All rights reserved.</p>
+    </footer>
+ </body>
+ </html>
